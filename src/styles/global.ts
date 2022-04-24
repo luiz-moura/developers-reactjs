@@ -1,12 +1,15 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
-  --background: #f0f2f5;
-  --blue: #388cff;
-  --orange: #FF9D2E;
-  --text-title: #363f5f;
-  --text-body: #969cb3;
-  --shape: #ffffff;
+  :root {
+    --background: #f0f2f5;
+    --blue: rgba(0, 0, 0, 0) linear-gradient(87.38deg, rgb(92, 51, 255) -4.51%, rgb(51, 153, 255) 104.58%) repeat scroll 0% 0%;
+    --blue-light: #38b4ff;
+    --orange: #FF9D2E;
+    --text-title: #363f5f;
+    --text-body: #969cb3;
+    --shape: #ffffff;
+  }
 
   * {
     margin: 0;
