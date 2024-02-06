@@ -36,7 +36,7 @@ export function DevelopersTable() {
           {developers.map(developer => (
             <tr key={developer.id}>
               <td>{developer.nome}</td>
-              <td>{developer.sexo}</td>
+              <td>{developer.sexo === 'masculine' ? 'M' : 'F'}</td>
               <td>{new Intl.DateTimeFormat('pt-BR').format(
                 new Date(developer.data_nascimento)
               )}</td>

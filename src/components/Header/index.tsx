@@ -2,12 +2,16 @@ import logoImg from '../../assets/logo.svg';
 
 import { Container, Content } from './style';
 
-export function Header() {
+interface HeaderProps {
+  onOpenNewDeveloperModal: () => void;
+}
+
+export function Header({ onOpenNewDeveloperModal }: HeaderProps ) {
   return (
     <Container>
       <Content>
-        <img src={logoImg} alt="Gazin Tech" />
-        <button type="button">
+        <img src={logoImg} alt="Desafio developers" />
+        <button type="button" onClick={onOpenNewDeveloperModal}>
           Cadastrar dev
         </button>
       </Content>
